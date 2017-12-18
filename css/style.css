@@ -5,10 +5,9 @@ body {
 }
 
 h2 {
-  font: 43px "Playfair Display", serif;
+  font: 43px/1.25 "Playfair Display", serif;
   color: #d22f25;
   margin: 0 0 40px 0;
-  line-height: 1.25;
 }
 h2:after {
   content: "";
@@ -20,16 +19,14 @@ h2:after {
 }
 
 h4 {
-  font: 22px "Open Sans", sans-serif;
+  font: 22px/1.25 "Open Sans", sans-serif;
   color: #151515;
   margin: 0 0 20px 0;
-  line-height: 1.25;
 }
 
 p {
-  font: 16px "Open Sans", sans-serif;
+  font: 16px/1.5 "Open Sans", sans-serif;
   color: #575757;
-  line-height: 1.5;
 }
 
 .section-space {
@@ -60,9 +57,8 @@ p {
 }
 .logo h1 {
   color: #777777;
-  font: 14px "Open Sans", sans-serif;
-  letter-spacing: 2px;
-  line-height: 1.2;
+  font: 14px/1.2 "Open Sans", sans-serif;
+  letter-spacing: 0.14em;
   margin: 10px 0 0 0;
   text-transform: uppercase;
 }
