@@ -66,6 +66,9 @@ p {
   margin: 10px 0 0 0;
   text-transform: uppercase;
 }
+.logo a:hover, .logo a:focus {
+  text-decoration: none !important;
+}
 
 /*====================== Service Section =========================*/
 .service {
@@ -157,13 +160,15 @@ p {
     max-width: 688px;
   }
 
-  .contact .section-title h4, .contct-form {
+  .contact .section-title h4,
+  .contct-form {
     max-width: 445px;
   }
 }
 /*====================== Phone =========================*/
 @media (max-width: 767px) {
-  .contact .section-title h4, .contct-form {
+  .contact .section-title h4,
+  .contct-form {
     max-width: 100%;
   }
 
