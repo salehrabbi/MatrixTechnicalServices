@@ -12,24 +12,21 @@ body {
 h2 {
     font: 43px/53px $p;
     color: rgb(210, 47, 37);
-    margin-bottom: 40px;
-    margin-top: 0;
+    margin: 0 0 40px 0;
     &:after{
         content: "";
         display: block;
         height: 2px;
         width: 50px;
         background: rgb(226, 226, 226);
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
 }
 
 h4 {
     font: 22px/27px $f;
     color: rgb(21, 21, 21);
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin: 0 0 20px 0;
 }
 
 p {
@@ -68,12 +65,74 @@ p {
         color: rgb(119, 119, 119);
         font: 14px/16px $f;
         letter-spacing: 2px;
-        margin-top: 10px;
+        margin: 10px 0 0 0;
         text-transform: uppercase;
-        margin-bottom: 0;
     }
 }
 /*====================== Service Section =========================*/
 .service{
     background: rgb(246, 246, 246);
+    .content{
+        p{
+            max-width: 733px;
+            margin: 0 auto 30px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+            li{
+                margin-bottom: 1px;
+                color: rgb(87, 87, 87);
+            }
+        }
+    }
+}
+/*====================== contact Section =========================*/
+.contact{
+    .section-title{
+        h4{
+            max-width: 733px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.contct-form{
+    max-width: 733px;
+    margin: 0 auto;
+    input,textarea{
+        width: 100%;
+        color: rgb(71, 71, 71);
+        border: 1px solid rgb(226, 226, 226);
+        border-radius: 4px;
+        padding: 15px;
+        margin: 0 0 20px 0;
+    }
+    .message-box{
+        height: 217px;
+    }
+    .submit{
+        padding: 15px 40px;
+        background: rgb(210, 47, 37);
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        width: auto;
+        text-transform: uppercase;
+        transition: .5s;
+        letter-spacing: 1px;
+        &:hover{
+            background-color: rgb(233, 53, 42);
+        }
+    }
+}
+/*====================== footer Section =========================*/
+.main-footer{
+    background: rgb(17, 17, 17);
+    padding: 60px 0 99px;
+    .copy-right{
+        color: rgb(241, 241, 241);
+    }
 }

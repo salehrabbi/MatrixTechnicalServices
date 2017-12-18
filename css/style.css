@@ -7,8 +7,7 @@ body {
 h2 {
   font: 43px/53px "Playfair Display", serif;
   color: #d22f25;
-  margin-bottom: 40px;
-  margin-top: 0;
+  margin: 0 0 40px 0;
 }
 h2:after {
   content: "";
@@ -16,15 +15,13 @@ h2:after {
   height: 2px;
   width: 50px;
   background: #e2e2e2;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
 h4 {
   font: 22px/27px "Open Sans", sans-serif;
   color: #151515;
-  margin-bottom: 20px;
-  margin-top: 0;
+  margin: 0 0 20px 0;
 }
 
 p {
@@ -62,12 +59,72 @@ p {
   color: #777777;
   font: 14px/16px "Open Sans", sans-serif;
   letter-spacing: 2px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   text-transform: uppercase;
-  margin-bottom: 0;
 }
 
 /*====================== Service Section =========================*/
 .service {
   background: #f6f6f6;
+}
+.service .content p {
+  max-width: 733px;
+  margin: 0 auto 30px;
+}
+.service .content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+.service .content ul li {
+  margin-bottom: 1px;
+  color: #575757;
+}
+
+/*====================== contact Section =========================*/
+.contact .section-title h4 {
+  max-width: 733px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contct-form {
+  max-width: 733px;
+  margin: 0 auto;
+}
+.contct-form input, .contct-form textarea {
+  width: 100%;
+  color: #474747;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+.contct-form .message-box {
+  height: 217px;
+}
+.contct-form .submit {
+  padding: 15px 40px;
+  background: #d22f25;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  width: auto;
+  text-transform: uppercase;
+  -webkit-transition: .5s;
+  transition: .5s;
+  letter-spacing: 1px;
+}
+.contct-form .submit:hover {
+  background-color: #e9352a;
+}
+
+/*====================== footer Section =========================*/
+.main-footer {
+  background: #111111;
+  padding: 60px 0 99px;
+}
+.main-footer .copy-right {
+  color: #f1f1f1;
 }
