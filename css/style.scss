@@ -1,0 +1,23 @@
+/*====================== universal code =========================*/
+$f: 'Open Sans', sans-serif;
+$p: 'Playfair Display', serif;
+body{
+    font-family: $f;
+    font-size: 16px;
+}
+
+h2{
+    font: 43px/53px $p;
+    color: rgb(210, 47, 37);
+}
+h4{
+    font: 22px/27px $f;
+    color: rgb(21, 21, 21);
+}
+p{
+    font: 16px/24px $f;
+    color: rgb(87, 87, 87);
+}
+.section-space{
+    padding: 80px 0;
+}
