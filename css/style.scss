@@ -10,10 +10,11 @@ body {
 }
 
 h2 {
-    font: 43px/53px $p;
+    font: 43px $p;
     color: rgb(210, 47, 37);
     margin: 0 0 40px 0;
-    &:after{
+    line-height: 1.25;
+    &:after {
         content: "";
         display: block;
         height: 2px;
@@ -24,14 +25,16 @@ h2 {
 }
 
 h4 {
-    font: 22px/27px $f;
+    font: 22px $f;
     color: rgb(21, 21, 21);
     margin: 0 0 20px 0;
+    line-height: 1.25;
 }
 
 p {
-    font: 16px/24px $f;
+    font: 16px $f;
     color: rgb(87, 87, 87);
+    line-height: 1.5;
 }
 
 .section-space {
@@ -42,18 +45,20 @@ p {
     display: initial;
 }
 
-.section-title{
+.section-title {
     text-align: center;
 }
+
+
 /*====================== Header Section =========================*/
 
 .main-header {
     border-top: 10px solid rgb(246, 246, 246);
-    .eye{
+    .eye {
         margin: 0 0 30px 0;
     }
-    .secton-title{
-        h4{
+    .secton-title {
+        h4 {
             padding-bottom: 24px;
         }
     }
@@ -63,46 +68,56 @@ p {
     margin: 30px 0;
     h1 {
         color: rgb(119, 119, 119);
-        font: 14px/16px $f;
+        font: 14px $f;
         letter-spacing: 2px;
+        line-height: 1.2;
         margin: 10px 0 0 0;
         text-transform: uppercase;
     }
 }
+
+
 /*====================== Service Section =========================*/
-.service{
+
+.service {
     background: rgb(246, 246, 246);
-    .content{
-        p{
+    .content {
+        p {
             max-width: 733px;
             margin: 0 auto 30px;
         }
-        ul{
+        ul {
             list-style: none;
             padding: 0;
             margin: 0;
             font-weight: 700;
-            li{
+            li {
                 margin-bottom: 1px;
                 color: rgb(87, 87, 87);
             }
         }
     }
 }
+
+
 /*====================== contact Section =========================*/
-.contact{
-    .section-title{
-        h4{
+
+.contact {
+    .section-title {
+        h4 {
             max-width: 733px;
             margin-left: auto;
             margin-right: auto;
+            word-wrap: break-word;
         }
     }
 }
-.contct-form{
+
+.contct-form {
     max-width: 733px;
     margin: 0 auto;
-    input,textarea{
+    input,
+    textarea {
         width: 100%;
         color: rgb(71, 71, 71);
         border: 1px solid rgb(226, 226, 226);
@@ -110,10 +125,10 @@ p {
         padding: 15px;
         margin: 0 0 20px 0;
     }
-    .message-box{
+    .message-box {
         height: 217px;
     }
-    .submit{
+    .submit {
         padding: 15px 40px;
         background: rgb(210, 47, 37);
         border: none;
@@ -123,16 +138,60 @@ p {
         text-transform: uppercase;
         transition: .5s;
         letter-spacing: 1px;
-        &:hover{
+        &:hover {
             background-color: rgb(233, 53, 42);
         }
     }
 }
+
+
 /*====================== footer Section =========================*/
-.main-footer{
+
+.main-footer {
     background: rgb(17, 17, 17);
     padding: 60px 0 99px;
-    .copy-right{
+    .copy-right {
         color: rgb(241, 241, 241);
+    }
+}
+
+
+/*====================== Media Query =========================*/
+
+
+/*====================== Tab/Notebook =========================*/
+
+@media (max-width:991px) {
+    .logo {
+        img {
+            max-height: 45px;
+        }
+        h1 {
+            font-size: 12px;
+        }
+    }
+    h2 {
+        font-size: 31px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .service .content p{
+        max-width: 688px;
+    }
+    .contact .section-title h4,.contct-form{
+        max-width: 445px;
+    }
+}
+/*====================== Phone =========================*/
+@media (max-width:767px){
+    .contact .section-title h4, .contct-form{
+        max-width: 100%;
+    }
+    .contct-form .submit{
+        width: 100%;
+    }
+    .logo{
+        margin: 20px 0;
     }
 }
